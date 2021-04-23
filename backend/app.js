@@ -48,7 +48,7 @@ const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 const randomBtn = document.querySelector('.random-btn');
 
-//set starting item
+//set starting item (Global var)
 let currentItem = 0;
 
 //load intitial item
@@ -63,4 +63,10 @@ function showPerson(person){
     author.textContent = item.name;
     job.textContent = item.job;
     info.textContent = item.text;
-}
+};
+
+// show next person
+nextBtn.addEventListener('click', function(){
+    currentItem++;
+    showPerson(currentItem);
+})
