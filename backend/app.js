@@ -53,5 +53,9 @@ let currentItem = 0;
 
 //load intitial item
 window.addEventListener('DOMContentLoaded', function(){
-    console.log("shake and bake")
-})
+    const item = reviews[currentItem];
+    img.src = item.img;
+    author.textContent = item.name;
+    job.textContent = item.job;
+    info.textContent = item.text;
+});
