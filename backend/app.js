@@ -75,7 +75,7 @@ nextBtn.addEventListener('click', function(){
 })
 
 // show prev person
-nextBtn.addEventListener('click', function(){
+prevBtn.addEventListener('click', function(){
     currentItem--;
     if(currentItem < 0){
         currentItem = reviews.length-1;
